@@ -1,16 +1,10 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+from models.message import Msg
 
-# 1. Define an API object
+# Define an API object
 app = FastAPI()
 
-
-# 2. Define data type
-class Msg(BaseModel):
-    msg: str
-
-
-# 3. Map HTTP method and path to python function
+# Map HTTP method and path to python function
 @app.get("/")
 async def root():
     return {"message": "Hello World. Welcome to the API home page!"}
