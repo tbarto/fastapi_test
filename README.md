@@ -8,3 +8,6 @@ Setting up basic fast api
 
 # Start the API application (on command line)
 `$ uvicorn main:app --reload`
+
+# Hitting an endpoint
+Go to `localhost:8000`
