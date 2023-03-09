@@ -25,6 +25,9 @@ async def function_demo_get():
 async def function_demo_post(inp: Msg):
     return {"message": inp.msg.upper()}
 
+@app.post("/lower")
+async def function_demo_post(inp: Msg):
+    return {"message": inp.msg.lower()}
 
 @app.get("/path/{path_id}")
 async def function_demo_get_path_id(path_id: int):
