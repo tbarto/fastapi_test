@@ -10,4 +10,4 @@ Setting up basic fast api
 `$ uvicorn main:app --reload`
 
 # Hitting an endpoint
-Go to `localhost:8000`
+Go to `localhost:8000/`
